@@ -26,9 +26,27 @@ The JSON File Verification Tool is a Java application designed to verify **AWS::
 To set up the project locally, follow these steps:
 1. Clone the repository to your local machine.
 2. Ensure you have Java installed on your system.
-3. Build the project using your preferred build tool (e.g. Maven ). The IDE `IntelliJ IDEA` should suggest to "Load Maven Project" and then click "Load Project"
-4. Run the tests to ensure everything is working correctly. To run the test you need to open Maven window on the right site in IntelliJ and then click Lifecycle -> test
-5. Run the program in the Main class clicking the green arrow at the of the screen
+3. Make sure you have updated your JDK
+4. Build the project using your preferred build tool (e.g. Maven ). The IDE `IntelliJ IDEA` should suggest to "Load Maven Project" and then click "Load Project"
+5. Run the tests to ensure everything is working correctly. To run the test you need to go to the classes called **DataLoaderTest** and **DataWriterTest**. Next you need to click on the green button next to the name of the class. Another way is to open Maven window on the right site in IntelliJ and then click Lifecycle -> test.
+6. Run the program in the Main class clicking the green arrow at the of the screen
+## Fixing problems
+Some problems that might have occured:
+1. First, if you have problem with Maven always Reload Maven Project clicking the refresh button in Maven window.
+2. If Maven has an error after compiling erase this code in **pom.xml**:
+` <build>
+   <pluginManagement>
+   <plugins>
+   <plugin>
+   <groupId>org.apache.maven.plugins</groupId>
+   <artifactId>maven-surefire-plugin</artifactId>
+   <version>3.2.5</version>
+   </plugin>
+   </plugins>
+   </pluginManagement>
+   </build>`
+3. If you have a problem about the **version**. Make sure you are using JDK 18 or higher. 
+
 ## Usage
 To use the JSON File Verification Tool, follow these steps:
 1. Provide the path to the JSON file you want to verify.
