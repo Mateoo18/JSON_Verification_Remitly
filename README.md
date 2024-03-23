@@ -4,6 +4,7 @@
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [How to run](#How-to-run)
+* [Fixing problems](#Fixing-problems)
 * [Usage](#usage)
 * [Room for Improvement](#room-for-improvement)
 * [Contact](#contact)
@@ -45,7 +46,8 @@ Some problems that might have occured:
    </plugins>
    </pluginManagement>
    </build>`
-3. If you have a problem about the **version**. Make sure you are using JDK 18 or higher. 
+3. If you have a problem about the **version**. Make sure you are using JDK 18 or higher.
+4. If you have another problem, please write to me on e-mail *mateusz.nowak.203@gmail.com*
 
 ## Usage
 To use the JSON File Verification Tool, follow these steps:
